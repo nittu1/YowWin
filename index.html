@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lights Out</h1>
+    <div id="game-board"></div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <div id="addendum">
+        <h2>Addendum</h2>
+        <p>The Lights Out game project was a stimulating exercise in developing a dynamic and interactive web application using core web technologies: HTML, CSS, and JavaScript. The central challenge was to ensure that the game board initializes in a random yet solvable configuration. This was achieved by starting with all lights off and then simulating random clicks to ensure every puzzle presented is solvable, providing a fair and engaging user experience.</p>
+        <p>In terms of implementation, the game's logic relies on efficient DOM manipulation and event handling. Each cell on the game board is represented as a div element, and their states are toggled using CSS classes. Clicking a cell not only changes its state but also the states of its adjacent cells, which creates a cascading effect central to the gameplay mechanics. This approach maintained a clear separation of concerns between styling and functionality, resulting in clean and maintainable code.</p>
+        <p>The visual design of the game board was implemented using a CSS grid layout, ensuring a responsive and intuitive interface. The lights toggle between two states, visually represented by different background colors. This simple yet effective design choice enhances the game's accessibility and user engagement. Additionally, the game features a pop-up alert to notify players of their victory, reinforcing the satisfaction of solving the puzzle.</p>
+        <p>Throughout the development process, several insights were gained. Ensuring the solvability of randomly generated puzzles was a critical learning point, emphasizing the need for algorithmic thinking in game design. The project also underscored the importance of event delegation and efficient DOM updates in creating responsive web applications. By maintaining a modular code structure, the project demonstrated the benefits of separating visual and functional aspects, which aids in debugging and future enhancements.</p>
+        <p>Overall, this Lights Out game project was an invaluable learning experience, blending theoretical concepts with practical implementation. It highlighted the intricacies of interactive design and provided a deeper understanding of creating engaging and solvable puzzle games on the web.</p>
+    </div>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
